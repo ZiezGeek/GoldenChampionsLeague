@@ -4,15 +4,14 @@
 // ============================================
 
 // ── FIREBASE CONFIG (replace with your own) ──
-const firebaseConfig = {
-  apiKey: "AIzaSyBpTzJMNlnIkXYSc7HzJgB14Kvv2hB2edc",
-  authDomain: "efootball-league-70d44.firebaseapp.com",
-  databaseURL: "https://efootball-league-70d44-default-rtdb.firebaseio.com",
-  projectId: "efootball-league-70d44",
-  storageBucket: "efootball-league-70d44.firebasestorage.app",
-  messagingSenderId: "1027946844235",
-  appId: "1:1027946844235:web:d5345db0d5826b3e31fdce",
-  measurementId: "G-EWHN9WKMZW"
+const FIREBASE_CONFIG = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
+  projectId: "YOUR_PROJECT",
+  storageBucket: "YOUR_PROJECT.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
 };
 
 // ── TEAMS ──
@@ -22,7 +21,8 @@ const TEAMS = [
   { id: "tito",     name: "Tito FC",                   short: "TIT", cls: "team-tito",      abbr: "TIT" },
   { id: "siyababa", name: "Siyababa FC",               short: "SIY", cls: "team-siyababa",  abbr: "SIY" },
   { id: "nopain",   name: "No Pain No Gain FC",         short: "NPG", cls: "team-nopain",   abbr: "NPG" },
-  { id: "sparta",   name: "Sparta Rotterdam",           short: "SPA", cls: "team-sparta",    abbr: "SPA" }
+  { id: "sparta",   name: "Sparta Rotterdam",           short: "SPA", cls: "team-sparta",    abbr: "SPA" },
+  { id: "prost",    name: "Pro ST FC",                  short: "PST", cls: "team-prost",     abbr: "PST" }
 ];
 
 // ── FIXTURE SCHEDULE (Home & Away — each pair plays twice) ──
