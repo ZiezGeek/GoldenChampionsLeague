@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GCL Admin — Golden Champions League</title>
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+<body>
+
+<!-- ═══════════════════ PIN LOGIN ═══════════════════ -->
+<div class="admin-login" id="loginScreen">
+  <div class="login-card">
+
+    <!-- Logo -->
+    <div class="team-logo-container team-ziezgeek"
+         style="width:64px;height:64px;font-size:18px;margin:0 auto 20px;">
+      GCL
+    </div>
+
+    <h2>Admin Access</h2>
+    <p>Golden Champions League</p>
+
+    <div class="pin-input">
+      <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" autofocus />
+      <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+      <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+      <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+      <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+      <input type="password" class="pin-digit" maxlength="1" inputmode="numeric" />
+    </div>
+
+    <button class="btn-gold" onclick="attemptLogin()">Enter Dashboard</button>
+    <div class="error-msg" id="pinError">Incorrect PIN</div>
+
+    <div style="margin-top:24px;">
+      <a href="index.html" style="font-family:'Oswald',sans-serif;font-size:0.72rem;letter-spacing:2px;color:var(--text-muted);text-decoration:none;">
+        ← Back to League
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════ ADMIN PANEL ═══════════════════ -->
+<div id="adminPanel" class="admin-panel">
+
+  <!-- Header -->
+  <div class="admin-header">
+    <div>
+      <h2>⚙ Admin Dashboard</h2>
+      <p style="font-family:'Oswald',sans-serif;font-size:0.75rem;letter-spacing:2px;color:var(--text-muted);">
+        GOLDEN CHAMPIONS LEAGUE · RESULT ENTRY
+      </p>
+    </div>
+    <div style="display:flex;gap:10px;align-items:center;">
+      <a href="index.html" class="btn-outline">← View League</a>
+      <button class="btn-outline" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <!-- Instructions -->
+  <div style="background:rgba(255,215,0,0.05);border:1px solid var(--gold-dark);padding:14px 18px;margin-bottom:24px;">
+    <p style="font-family:'Oswald',sans-serif;font-size:0.8rem;letter-spacing:2px;color:var(--gold);">
+      ℹ INSTRUCTIONS — Enter home and away scores, then press Save. Results update live for all viewers.
+    </p>
+  </div>
+
+  <!-- Fixture List -->
+  <div id="adminFixtures">
+    <div style="text-align:center;padding:32px;color:var(--text-muted);font-family:'Oswald',sans-serif;letter-spacing:2px;">
+      Loading fixtures...
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="margin-top:32px;padding-top:16px;border-top:1px solid var(--dark-border);text-align:center;">
+    <p style="font-family:'Oswald',sans-serif;font-size:0.72rem;letter-spacing:2px;color:var(--text-muted);">
+      GOLDEN CHAMPIONS LEAGUE · Created by <span style="color:var(--gold);">ZiezGeek</span>
+    </p>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast"></div>
+
+<!-- Scripts -->
+<script src="app.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
