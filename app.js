@@ -4,14 +4,15 @@
 // ============================================
 
 // ── FIREBASE CONFIG (replace with your own) ──
-const FIREBASE_CONFIG = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT.firebaseapp.com",
-  databaseURL: "https://YOUR_PROJECT-default-rtdb.firebaseio.com",
-  projectId: "YOUR_PROJECT",
-  storageBucket: "YOUR_PROJECT.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+const firebaseConfig = {
+  apiKey: "AIzaSyBpTzJMNlnIkXYSc7HzJgB14Kvv2hB2edc",
+  authDomain: "efootball-league-70d44.firebaseapp.com",
+  databaseURL: "https://efootball-league-70d44-default-rtdb.firebaseio.com",
+  projectId: "efootball-league-70d44",
+  storageBucket: "efootball-league-70d44.firebasestorage.app",
+  messagingSenderId: "1027946844235",
+  appId: "1:1027946844235:web:d5345db0d5826b3e31fdce",
+  measurementId: "G-EWHN9WKMZW"
 };
 
 // ── TEAMS ──
