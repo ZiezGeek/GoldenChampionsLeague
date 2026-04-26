@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="tito_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1b5e20"/>
+      <stop offset="100%" style="stop-color:#004d00"/>
+    </linearGradient>
+    <linearGradient id="tito_green2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2e7d32"/>
+      <stop offset="100%" style="stop-color:#1b5e20"/>
+    </linearGradient>
+    <filter id="tito_shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Shield outer white border -->
+  <path d="M100 8 L178 42 L178 115 Q175 162 100 192 Q25 162 22 115 L22 42 Z"
+        fill="white" filter="url(#tito_shadow)"/>
+  <!-- Shield green fill -->
+  <path d="M100 15 L171 47 L171 115 Q168 157 100 185 Q32 157 29 115 L29 47 Z"
+        fill="url(#tito_bg)"/>
+
+  <!-- White diagonal split (left half) -->
+  <path d="M100 15 L29 47 L29 115 Q32 157 100 185 Z"
+        fill="white" opacity="0.08"/>
+
+  <!-- Vertical white stripe center -->
+  <rect x="91" y="15" width="18" height="170" fill="white" opacity="0.07"/>
+
+  <!-- Lion body (simplified bold icon) -->
+  <!-- Body -->
+  <ellipse cx="100" cy="95" rx="28" ry="22" fill="#76ff03" opacity="0.9"/>
+  <!-- Head -->
+  <circle cx="100" cy="68" r="20" fill="#76ff03" opacity="0.9"/>
+  <!-- Mane -->
+  <circle cx="100" cy="68" r="26" fill="#FFD700" opacity="0.7"/>
+  <circle cx="100" cy="68" r="20" fill="#76ff03" opacity="0.95"/>
+  <!-- Eyes -->
+  <circle cx="93" cy="65" r="3.5" fill="#1b5e20"/>
+  <circle cx="107" cy="65" r="3.5" fill="#1b5e20"/>
+  <circle cx="93" cy="65" r="1.5" fill="black"/>
+  <circle cx="107" cy="65" r="1.5" fill="black"/>
+  <!-- Nose -->
+  <ellipse cx="100" cy="72" rx="4" ry="2.5" fill="#1b5e20"/>
+  <!-- Mouth -->
+  <path d="M96,75 Q100,79 104,75" fill="none" stroke="#1b5e20" stroke-width="1.5"/>
+  <!-- Ears -->
+  <polygon points="83,52 78,40 88,48" fill="#76ff03"/>
+  <polygon points="117,52 122,40 112,48" fill="#76ff03"/>
+  <!-- Tail -->
+  <path d="M128,105 Q148,95 145,115 Q142,125 135,118" fill="none" stroke="#76ff03" stroke-width="5" stroke-linecap="round"/>
+  <!-- Legs -->
+  <rect x="78" y="112" width="12" height="18" rx="5" fill="#76ff03" opacity="0.9"/>
+  <rect x="110" y="112" width="12" height="18" rx="5" fill="#76ff03" opacity="0.9"/>
+
+  <!-- Gold name band -->
+  <rect x="29" y="138" width="142" height="26" fill="#76ff03" opacity="0.95"/>
+  <text x="100" y="155" font-family="Arial Black, sans-serif" font-size="14" font-weight="900"
+        fill="#1b5e20" text-anchor="middle" letter-spacing="3">TITO FC</text>
+
+  <!-- Bottom shield tip text -->
+  <text x="100" y="178" font-family="Arial, sans-serif" font-size="7"
+        fill="#76ff03" text-anchor="middle" letter-spacing="2" opacity="0.8">EST. 2025</text>
+</svg>

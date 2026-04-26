@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="zz_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0000"/>
+      <stop offset="100%" style="stop-color:#4a0000"/>
+    </linearGradient>
+    <linearGradient id="zz_gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#B8860B"/>
+    </linearGradient>
+    <filter id="zz_glow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Hexagon shield outer -->
+  <polygon points="100,8 175,50 175,130 100,192 25,130 25,50"
+           fill="url(#zz_gold)"/>
+  <!-- Hexagon shield inner -->
+  <polygon points="100,16 167,55 167,128 100,184 33,128 33,55"
+           fill="url(#zz_bg)"/>
+
+  <!-- Circuit/tech lines decoration -->
+  <g stroke="#FFD700" stroke-width="1" opacity="0.3" fill="none">
+    <line x1="50" y1="70" x2="150" y2="70"/>
+    <line x1="45" y1="80" x2="155" y2="80"/>
+    <line x1="50" y1="150" x2="150" y2="150"/>
+    <line x1="45" y1="140" x2="155" y2="140"/>
+  </g>
+
+  <!-- Big ZG letters styled -->
+  <text x="100" y="108" font-family="Arial Black, sans-serif" font-size="52" font-weight="900"
+        fill="url(#zz_gold)" text-anchor="middle" filter="url(#zz_glow)">ZG</text>
+
+  <!-- Crown above letters -->
+  <path d="M68,58 L72,42 L82,55 L90,38 L100,52 L110,38 L118,55 L128,42 L132,58 Z"
+        fill="url(#zz_gold)"/>
+  <rect x="68" y="56" width="64" height="8" rx="2" fill="url(#zz_gold)"/>
+
+  <!-- Gold band -->
+  <rect x="33" y="118" width="134" height="24" fill="url(#zz_gold)" opacity="0.9"/>
+
+  <!-- Name text -->
+  <text x="100" y="134" font-family="Arial Black, sans-serif" font-size="11" font-weight="900"
+        fill="#1a0000" text-anchor="middle" letter-spacing="2">ZIEZGEEK FC</text>
+
+  <!-- Bottom stars -->
+  <polygon points="80,158 82,164 88,164 83,168 85,174 80,170 75,174 77,168 72,164 78,164"
+           fill="#FFD700" opacity="0.8"/>
+  <polygon points="100,156 102,163 109,163 103,167 105,174 100,170 95,174 97,167 91,163 98,163"
+           fill="#FFD700"/>
+  <polygon points="120,158 122,164 128,164 123,168 125,174 120,170 115,174 117,168 112,164 118,164"
+           fill="#FFD700" opacity="0.8"/>
+</svg>

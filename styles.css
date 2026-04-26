@@ -406,35 +406,25 @@ body {
 
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
-/* ── TEAM LOGOS (SVG-based) ── */
-.team-logo-container {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.5px;
+/* ── TEAM LOGOS (SVG image files) ── */
+.team-logo-svg {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
   flex-shrink: 0;
-  text-align: center;
-  line-height: 1;
-  border: 2px solid rgba(255,255,255,0.15);
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
 }
 
-.logo-lg {
-  width: 42px;
-  height: 42px;
-  font-size: 14px;
+.team-logo-svg.logo-lg {
+  width: 48px;
+  height: 48px;
 }
 
 /* TEAM COLORS */
 .team-magolide { background: linear-gradient(135deg, #1a237e, #283593); color: #FFD700; }
 .team-ziezgeek  { background: linear-gradient(135deg, #1b0000, #4a0000); color: #FFD700; }
 .team-tito      { background: linear-gradient(135deg, #004d00, #1b5e20); color: #76ff03; }
-.team-siyababa  { background: linear-gradient(135deg, #4a148c, #6a1b9a); color: #ea80fc; }
+.team-siyababa  { background: linear-gradient(135deg, #1a0033, #3a0068); color: #FFD700; }
 .team-nopain    { background: linear-gradient(135deg, #1a237e, #e53935); color: #fff; }
 .team-sparta    { background: linear-gradient(135deg, #b71c1c, #c62828); color: #fff; }
 .team-prost     { background: linear-gradient(135deg, #0d2137, #1a3a5c); color: #00cfff; }

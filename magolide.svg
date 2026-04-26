@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="mg_shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a237e"/>
+      <stop offset="100%" style="stop-color:#0d47a1"/>
+    </linearGradient>
+    <linearGradient id="mg_gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#B8860B"/>
+    </linearGradient>
+    <filter id="mg_shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Outer shield border -->
+  <path d="M100 8 L180 40 L180 110 Q180 160 100 192 Q20 160 20 110 L20 40 Z"
+        fill="url(#mg_gold)" filter="url(#mg_shadow)"/>
+  <!-- Inner shield -->
+  <path d="M100 16 L172 45 L172 110 Q172 155 100 184 Q28 155 28 110 L28 45 Z"
+        fill="url(#mg_shield)"/>
+
+  <!-- Gold horizontal band -->
+  <rect x="28" y="105" width="144" height="28" fill="url(#mg_gold)" opacity="0.9"/>
+
+  <!-- Big star center -->
+  <polygon points="100,42 107,65 132,65 112,79 119,102 100,88 81,102 88,79 68,65 93,65"
+           fill="url(#mg_gold)" filter="url(#mg_shadow)"/>
+
+  <!-- Small stars left -->
+  <polygon points="52,72 55,81 65,81 57,87 60,96 52,90 44,96 47,87 39,81 49,81"
+           fill="#FFD700" opacity="0.85"/>
+  <!-- Small stars right -->
+  <polygon points="148,72 151,81 161,81 153,87 156,96 148,90 140,96 143,87 135,81 145,81"
+           fill="#FFD700" opacity="0.85"/>
+
+  <!-- Team name on band -->
+  <text x="100" y="124" font-family="Georgia, serif" font-size="11" font-weight="bold"
+        fill="#1a237e" text-anchor="middle" letter-spacing="1">MAGOLIDE</text>
+
+  <!-- Bottom text -->
+  <text x="100" y="155" font-family="Georgia, serif" font-size="8.5" font-weight="bold"
+        fill="#FFD700" text-anchor="middle" letter-spacing="1.5">CLASSIC STARS FC</text>
+
+  <!-- Laurel left -->
+  <g fill="none" stroke="#FFD700" stroke-width="1.2" opacity="0.7">
+    <path d="M34,148 Q30,140 36,134"/>
+    <path d="M38,152 Q32,144 38,136"/>
+    <path d="M43,155 Q36,148 42,140"/>
+    <path d="M48,157 Q42,150 48,143"/>
+  </g>
+  <!-- Laurel right -->
+  <g fill="none" stroke="#FFD700" stroke-width="1.2" opacity="0.7">
+    <path d="M166,148 Q170,140 164,134"/>
+    <path d="M162,152 Q168,144 162,136"/>
+    <path d="M157,155 Q164,148 158,140"/>
+    <path d="M152,157 Q158,150 152,143"/>
+  </g>
+</svg>

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="npg_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d47a1"/>
+      <stop offset="50%" style="stop-color:#1565c0"/>
+      <stop offset="100%" style="stop-color:#b71c1c"/>
+    </linearGradient>
+    <linearGradient id="npg_red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#c62828"/>
+      <stop offset="100%" style="stop-color:#e53935"/>
+    </linearGradient>
+    <filter id="npg_shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Shield outer white -->
+  <path d="M100 6 L182 40 L182 118 Q180 164 100 194 Q20 164 18 118 L18 40 Z"
+        fill="white" filter="url(#npg_shadow)"/>
+  <!-- Shield blue half left -->
+  <path d="M100 13 L30 46 L30 118 Q32 158 100 185 Z" fill="#0d47a1"/>
+  <!-- Shield red half right -->
+  <path d="M100 13 L170 46 L170 118 Q168 158 100 185 Z" fill="#c62828"/>
+
+  <!-- White center stripe -->
+  <rect x="92" y="13" width="16" height="172" fill="white"/>
+
+  <!-- Red diagonal sash -->
+  <path d="M30,80 L170,80 L170,96 L30,96 Z" fill="url(#npg_red)" opacity="0.9"/>
+
+  <!-- Fist icon -->
+  <!-- Fingers -->
+  <rect x="74" y="52" width="10" height="22" rx="5" fill="white"/>
+  <rect x="86" y="48" width="10" height="26" rx="5" fill="white"/>
+  <rect x="98" y="47" width="10" height="27" rx="5" fill="white"/>
+  <rect x="110" y="49" width="10" height="25" rx="5" fill="white"/>
+  <!-- Palm -->
+  <rect x="74" y="68" width="46" height="24" rx="6" fill="white"/>
+  <!-- Thumb -->
+  <rect x="62" y="72" width="14" height="12" rx="6" fill="white"/>
+
+  <!-- NO PAIN text on red band -->
+  <text x="100" y="90" font-family="Arial Black, sans-serif" font-size="9" font-weight="900"
+        fill="white" text-anchor="middle" letter-spacing="2">NO PAIN NO GAIN</text>
+
+  <!-- Blue band bottom -->
+  <path d="M30,118 Q32,158 100,185 Q168,158 170,118 L170,130 Q168,165 100,188 Q32,165 30,130 Z"
+        fill="#0d47a1"/>
+
+  <!-- FC text -->
+  <text x="100" y="152" font-family="Arial Black, sans-serif" font-size="14" font-weight="900"
+        fill="white" text-anchor="middle" letter-spacing="4">NPNG FC</text>
+
+  <!-- Stars row -->
+  <polygon points="78,164 80,170 86,170 81,174 83,180 78,176 73,180 75,174 70,170 76,170" fill="#FFD700"/>
+  <polygon points="93,162 95,169 102,169 96,173 98,180 93,176 88,180 90,173 84,169 91,169" fill="#FFD700"/>
+  <polygon points="108,164 110,170 116,170 111,174 113,180 108,176 103,180 105,174 100,170 106,170" fill="#FFD700"/>
+  <polygon points="122,164 124,170 130,170 125,174 127,180 122,176 117,180 119,174 114,170 120,170" fill="#FFD700"/>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="pst_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2137"/>
+      <stop offset="100%" style="stop-color:#1a3a5c"/>
+    </linearGradient>
+    <linearGradient id="pst_cyan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00e5ff"/>
+      <stop offset="100%" style="stop-color:#0097a7"/>
+    </linearGradient>
+    <filter id="pst_glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#00cfff" flood-opacity="0.5"/>
+    </filter>
+    <filter id="pst_shadow">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Shield outer cyan -->
+  <path d="M100 6 L182 38 L182 116 Q180 164 100 194 Q20 164 18 116 L18 38 Z"
+        fill="url(#pst_cyan)" filter="url(#pst_shadow)"/>
+  <!-- Shield inner dark navy -->
+  <path d="M100 14 L174 44 L174 116 Q172 158 100 186 Q28 158 26 116 L26 44 Z"
+        fill="url(#pst_bg)"/>
+
+  <!-- Horizontal cyan bands -->
+  <rect x="26" y="80" width="148" height="8" fill="url(#pst_cyan)" opacity="0.3"/>
+  <rect x="26" y="100" width="148" height="4" fill="url(#pst_cyan)" opacity="0.2"/>
+
+  <!-- Shield inside shield (inner crest detail) -->
+  <path d="M100 22 L158 48 L158 106 Q156 138 100 158 Q44 138 42 106 L42 48 Z"
+        fill="none" stroke="#00e5ff" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Bold PST letters -->
+  <text x="100" y="100" font-family="Arial Black, sans-serif" font-size="46" font-weight="900"
+        fill="url(#pst_cyan)" text-anchor="middle" filter="url(#pst_glow)">PST</text>
+
+  <!-- Star above letters -->
+  <polygon points="100,28 103,38 114,38 105,44 108,54 100,48 92,54 95,44 86,38 97,38"
+           fill="url(#pst_cyan)" filter="url(#pst_glow)"/>
+
+  <!-- Cyan name band -->
+  <rect x="26" y="118" width="148" height="26" fill="url(#pst_cyan)" opacity="0.95"/>
+  <text x="100" y="135" font-family="Arial Black, sans-serif" font-size="11" font-weight="900"
+        fill="#0d2137" text-anchor="middle" letter-spacing="3">PRO ST FC</text>
+
+  <!-- Bottom lines decoration -->
+  <line x1="40" y1="152" x2="160" y2="152" stroke="#00e5ff" stroke-width="1" opacity="0.4"/>
+  <text x="100" y="166" font-family="Arial, sans-serif" font-size="7.5"
+        fill="#00e5ff" text-anchor="middle" letter-spacing="3" opacity="0.7">PRIDE · SKILL · TRIUMPH</text>
+
+  <!-- Corner accents -->
+  <circle cx="42" cy="46" r="3" fill="#00e5ff" opacity="0.4"/>
+  <circle cx="158" cy="46" r="3" fill="#00e5ff" opacity="0.4"/>
+</svg>

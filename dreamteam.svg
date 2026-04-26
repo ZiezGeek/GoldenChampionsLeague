@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="dt_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0033"/>
+      <stop offset="100%" style="stop-color:#3a0068"/>
+    </linearGradient>
+    <linearGradient id="dt_gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700"/>
+      <stop offset="100%" style="stop-color:#B8860B"/>
+    </linearGradient>
+    <linearGradient id="dt_purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b1fa2"/>
+      <stop offset="100%" style="stop-color:#4a148c"/>
+    </linearGradient>
+    <filter id="dt_glow">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#FFD700" flood-opacity="0.6"/>
+    </filter>
+    <filter id="dt_shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Shield outer gold border -->
+  <path d="M100 6 L182 40 L182 118 Q180 165 100 194 Q20 165 18 118 L18 40 Z"
+        fill="url(#dt_gold)" filter="url(#dt_shadow)"/>
+
+  <!-- Shield inner purple -->
+  <path d="M100 14 L174 46 L174 118 Q172 160 100 186 Q28 160 26 118 L26 46 Z"
+        fill="url(#dt_bg)"/>
+
+  <!-- Subtle inner glow ring -->
+  <path d="M100 20 L168 50 L168 118 Q166 156 100 180 Q34 156 32 118 L32 50 Z"
+        fill="none" stroke="#7b1fa2" stroke-width="2" opacity="0.5"/>
+
+  <!-- ★ BIG CROWN ★ -->
+  <!-- Crown base -->
+  <rect x="62" y="72" width="76" height="18" rx="4" fill="url(#dt_gold)"/>
+  <!-- Crown points -->
+  <polygon points="62,72 62,48 76,62 100,44 124,62 138,48 138,72" fill="url(#dt_gold)"/>
+  <!-- Crown jewels -->
+  <circle cx="76" cy="65" r="5" fill="#e040fb" filter="url(#dt_glow)"/>
+  <circle cx="100" cy="56" r="6" fill="#ff1744" filter="url(#dt_glow)"/>
+  <circle cx="124" cy="65" r="5" fill="#2979ff" filter="url(#dt_glow)"/>
+  <!-- Crown band detail -->
+  <rect x="62" y="78" width="76" height="6" rx="2" fill="url(#dt_purple)" opacity="0.6"/>
+
+  <!-- Gold band -->
+  <rect x="26" y="118" width="148" height="30" fill="url(#dt_gold)"/>
+
+  <!-- DREAM TEAM text -->
+  <text x="100" y="133" font-family="Arial Black, sans-serif" font-size="13" font-weight="900"
+        fill="#1a0033" text-anchor="middle" letter-spacing="2">DREAM</text>
+  <text x="100" y="145" font-family="Arial Black, sans-serif" font-size="10" font-weight="900"
+        fill="#3a0068" text-anchor="middle" letter-spacing="4">TEAM</text>
+
+  <!-- 5 stars row below crown -->
+  <g fill="url(#dt_gold)" filter="url(#dt_glow)">
+    <polygon points="60,100 62,106 68,106 63,110 65,116 60,112 55,116 57,110 52,106 58,106"/>
+    <polygon points="76,96 78,103 85,103 79,107 81,114 76,110 71,114 73,107 67,103 74,103"/>
+    <polygon points="100,94 102,101 109,101 103,105 105,112 100,108 95,112 97,105 91,101 98,101"/>
+    <polygon points="124,96 126,103 133,103 127,107 129,114 124,110 119,114 121,107 115,103 122,103"/>
+    <polygon points="140,100 142,106 148,106 143,110 145,116 140,112 135,116 137,110 132,106 138,106"/>
+  </g>
+
+  <!-- Bottom decorations -->
+  <line x1="38" y1="158" x2="162" y2="158" stroke="url(#dt_gold)" stroke-width="1" opacity="0.5"/>
+  <polygon points="100,162 102,168 100,172 98,168" fill="url(#dt_gold)" opacity="0.7"/>
+  <text x="100" y="178" font-family="Arial, sans-serif" font-size="7"
+        fill="#FFD700" text-anchor="middle" letter-spacing="3" opacity="0.6">EST. 2025</text>
+
+  <!-- Corner star accents -->
+  <polygon points="36,50 38,56 44,56 39,60 41,66 36,62 31,66 33,60 28,56 34,56"
+           fill="#FFD700" opacity="0.4"/>
+  <polygon points="164,50 166,56 172,56 167,60 169,66 164,62 159,66 161,60 156,56 162,56"
+           fill="#FFD700" opacity="0.4"/>
+</svg>
