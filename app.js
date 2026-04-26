@@ -4,7 +4,7 @@
 // ============================================
 
 // ── FIREBASE CONFIG (replace with your own) ──
-const firebaseConfig = {
+const FIREBASE_CONFIG = {
   apiKey: "AIzaSyBpTzJMNlnIkXYSc7HzJgB14Kvv2hB2edc",
   authDomain: "efootball-league-70d44.firebaseapp.com",
   databaseURL: "https://efootball-league-70d44-default-rtdb.firebaseio.com",
@@ -17,13 +17,13 @@ const firebaseConfig = {
 
 // ── TEAMS ──
 const TEAMS = [
-  { id: "magolide", name: "Magolide Classic Stars FC", short: "MCS", cls: "team-magolide", abbr: "MCS" },
-  { id: "ziezgeek", name: "ZiezGeek FC",               short: "ZZG", cls: "team-ziezgeek",  abbr: "ZZG" },
-  { id: "tito",     name: "Tito FC",                   short: "TIT", cls: "team-tito",      abbr: "TIT" },
-  { id: "siyababa", name: "Siyababa FC",               short: "SIY", cls: "team-siyababa",  abbr: "SIY" },
-  { id: "nopain",   name: "No Pain No Gain FC",         short: "NPG", cls: "team-nopain",   abbr: "NPG" },
-  { id: "sparta",   name: "Sparta Rotterdam",           short: "SPA", cls: "team-sparta",    abbr: "SPA" },
-  { id: "prost",    name: "Pro ST FC",                  short: "PST", cls: "team-prost",     abbr: "PST" }
+  { id: "magolide", name: "Magolide Classic Stars FC", short: "MCS", cls: "team-magolide", abbr: "MCS", logo: "logos/magolide.svg" },
+  { id: "ziezgeek", name: "ZiezGeek FC",               short: "ZZG", cls: "team-ziezgeek",  abbr: "ZZG", logo: "logos/ziezgeek.svg" },
+  { id: "tito",     name: "Tito FC",                   short: "TIT", cls: "team-tito",      abbr: "TIT", logo: "logos/tito.svg" },
+  { id: "siyababa", name: "Dream Team",               short: "DRT", cls: "team-siyababa",  abbr: "DRT", logo: "logos/dreamteam.svg" },
+  { id: "nopain",   name: "No Pain No Gain FC",         short: "NPG", cls: "team-nopain",   abbr: "NPG", logo: "logos/nopain.svg" },
+  { id: "sparta",   name: "Sparta Rotterdam",           short: "SPA", cls: "team-sparta",    abbr: "SPA", logo: "logos/sparta.svg" },
+  { id: "prost",    name: "Pro ST FC",                  short: "PST", cls: "team-prost",     abbr: "PST", logo: "logos/prost.svg" }
 ];
 
 // ── FIXTURE SCHEDULE (Home & Away — each pair plays twice) ──
@@ -110,7 +110,7 @@ function computeTable(fixtures) {
 
 // ── TEAM LOGO HTML ──
 function logoHTML(team, size = "") {
-  return `<div class="team-logo-container ${team.cls} ${size}">${team.abbr}</div>`;
+  return `<img src="${team.logo}" alt="${team.name}" class="team-logo-svg ${size}" onerror="this.style.display='none'"/>`;
 }
 
 // ── FIREBASE INIT ──
